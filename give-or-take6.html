@@ -469,7 +469,7 @@
 
             <div class="grid-container">
                 <div class="action-panel" id="actionPanelLeft">
-                    <button class="action-btn keep-btn" id="leftButton" onclick="handleLeftButton()">🎁 Keep</button>
+                    <button class="action-btn keep-btn" id="leftButton" onclick="handleLeftButton()">🎁 Take</button>
                 </div>
                 <div class="grid" id="cardGrid"></div>
                 <div class="action-panel" id="actionPanelRight">
@@ -856,7 +856,7 @@
             
             if (gameState.currentTeam === 1) {
                 // Team 1's turn: Keep on left, Give on right
-                leftButton.textContent = '🎁 Keep';
+                leftButton.textContent = '🎁 Take';
                 leftButton.className = 'action-btn keep-btn';
                 rightButton.textContent = '🎯 Give';
                 rightButton.className = 'action-btn give-btn';
@@ -864,7 +864,7 @@
                 // Team 2's turn: Give on left, Keep on right
                 leftButton.textContent = '🎯 Give';
                 leftButton.className = 'action-btn give-btn';
-                rightButton.textContent = '🎁 Keep';
+                rightButton.textContent = '🎁 Take';
                 rightButton.className = 'action-btn keep-btn';
             }
         }
